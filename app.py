@@ -98,13 +98,105 @@ def board_page():
     st.write('\n')
     st.write('We offer a flexible and dynamic work environment that is dedicated to supporting and developing our team members. If you are looking for an opportunity to make a meaningful impact in your community and gain valuable leadership experience, we encourage you to apply for this position. This position is fully remote and unpaid.')
 
+def swe_page():
+    st.title('Software Development Team')
+    st.write('\n')
+    st.write('\n')
+
+    st.header("The Cookout: BEP's Social Media Platform")
+    st.write('\n')
+    st.write('\n')
+
+    st.write("Black Excellence Pipeline was born out of a desire to provide a much-needed sense of community during difficult times in the pandemic. Unfortunately, we found that over time we struggled to maintain consistent communication with our stakeholders, and our events often fall short of making a significant impact. That's why we propose to create sub-communities within the black collegiate space through an app, offering local, school-based, hobby-based, professional, social and cultural groups. By using user data, we can allocate funding and plan events based on specific needs and preferences of active subcommunities, creating a direct pipeline of community, discussion, and opportunity.")
+    st.write('\n')
+    st.write('\n')
+
+    st.write("What sets our platform apart is its ability to automatically add users to communities based on their interests, using data from other platforms and the data the user produces on the app. This means that users don't need to search for these communities; the community finds them. Our platform will serve as a research and data collection tool for our users/stakeholders and a source of information for funding and event planning.")
+    st.write('\n')
+    st.write('\n')
+    
+    st.write("Our team plans to develop a website proof of concept to confirm the features and user experience we want to achieve. We will then create a website and mobile application prototype, first on iOS, then on Android, to showcase to potential investors and sponsors. Once we have secured enough funding to develop a minimum viable product, we plan to release refined test versions within Boston and DC campuses. We are looking for passionate developers to join our team and help us bring this innovative and impactful idea to life.")
+
+def research_page():
+    st.title('Research Team')
+    st.write('\n')
+    st.write('\n')
+
+    st.subheader('The Color Line: Examining Barriers to Success for Black Individuals in Education and Industry')
+    st.write('\n')
+    st.write('\n')
+
+    st.write("Our proposed initiative seeks to address the critical issue of low Black matriculation rates in higher education institutions and underrepresentation in different industries. By partnering with prestigious universities as well as corporations, we can pool resources and expertise to gather data and conduct research on the root causes of this issue. Our goal is to identify and address systemic racism and inequality in education and job acquisition and lack of resources and support for Black students, applicants and employees")
+    st.write('\n')
+    st.write("Through our research, we aim to develop innovative policy solutions to increase Black matriculation rates in higher education and DEI initiatives to improve Black presence in current underrepresented industries. This includes advocating for increased funding and resources for historically black colleges and universities, supporting initiatives to improve access to financial aid and scholarships for black students, creating corporate partnerships with organizations like our own to increase Black applicants presence during the interview process and creating mentorship and support programs for Black students and professionals.")
+    st.write('\n')
+    st.write("Our approach is unique in that we plan to leverage the power of technology to generate data and engage directly with students. We will develop an app that not only collects data but also invites students to participate in our research.")
+    st.write('\n')
+    st.write("We believe that our initiative has the potential to grow into a think tank that addresses a range of issues related to racial inequality and social justice in education and industry. We encourage student researchers to join our team in this important work. By working together, we can create a brighter future for Black students and applicants and promote equity and justice in education and industry for all.")
+
+
+def events_page():
+    pass
+
+def programs_page():
+    pass
+
+def fund_page():
+    pass
+
+def membership_page():
+
+    benefits = [
+        "​​Providing access to exclusive resources and materials",
+        "Offering training and professional development opportunities", 
+        "Creating a community of like-minded individuals for networking and collaboration", 
+        "Providing mentoring and coaching programs",
+        "Hosting events and conferences for networking and learning",
+        "Offering discounts or special offers to members",
+        "Providing opportunities to volunteer and give back to the community",
+        "Advocating for change and influencing policy decisions",
+        "Offering scholarships and grants for education or career advancement",
+        "Hosting webinars and online training sessions",
+        "Providing access to specialized equipment or technology",
+        "Offering free or discounted access to educational resources, such as books or journals",
+        "Creating a referral network to help members find employment or business opportunities",
+        "Offering financial planning and assistance programs",
+        "Providing support and counseling services, such as mental health or addiction services",
+        "Offering legal and accounting services",
+        "Providing resources for personal and professional development, such as leadership training or time management resources",
+        "Hosting social events and gatherings to build community and camaraderie",
+        "Offering health and wellness programs, such as exercise classes or nutrition workshops",
+        "Providing access to opportunities for community service and activism"
+
+    ]
+    
+    st.title("BEP Membership")
+    st.write('\n')
+    st.write('\n')
+
+    st.header("Benefits")
+    st.write('\n')
+    st.write("At BEP we strive to add value to our members. Here is a list of various initiatives being worked on by our team to ensure members have the best chance and accessibility of resources for success!")
+    st.write('\n')
+    for item in benefits:
+        st.write("- " + item)
+
+
+    st.header("Membership Application")
+    st.write('\n')
+    st.write('\n')
+    st.write("Our application process is straightforward yet meaningful. In addition to the typical fill-in-the-blanks, we require a personal statement. This statement is your opportunity to share your unique story with us, and to tell us why you want to be a BEP member. We want to hear how you plan to embody our three pillars: civic engagement, preservation, and knowledge.")
+    st.write("Joining BEP means becoming part of a community that is invested in your success. We want to support you as you pursue your dreams, and we believe that together, we can make a positive impact in our communities and beyond.")
 def main():
 
     # Create dictionary with page names as keys and corresponding functions as values
     pages = {
         "Home": page_home,
         "Timeline": timeline,
-        "Board of Directors": board_page
+        "Board of Directors": board_page,
+        "Software Development Team": swe_page,
+        "Research Team": research_page,
+        "BEP Membership": membership_page
     }
 
     # Display pages as tabs in the sidebar
