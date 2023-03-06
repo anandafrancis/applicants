@@ -60,10 +60,43 @@ def timeline():
     st.title("Timeline")
     st.write("We are working towards creating a timeline for our different projects to give you a better understanding of our deadlines and where you may see yourself stepping in and helping us do this great work.")
 
-def page_contact():
-    st.title("Contact")
-    st.write("Contact us here.")
+def board_page():
+    st.title("Board of Directors Job Posting")
+    st.write('\n')
+    st.write('\n')
+    
+    responsibilities = ["Attend board meetings on a regular basis and actively participate in discussions and decision-making processes.", 
+                        "Provide guidance and support to the organization's leadership team.",
+                        "Monitor and evaluate the organization's performance, programs, and operations.",
+                        "Work with the team to develop and implement strategic plans.",
+                        "Help identify and cultivate relationships with potential donors, sponsors, and partners.",
+                        "Represent the organization in various events and activities.",
+                        "Help recruit and onboard new board members and staff."
+                        ]
+    
+    quals = ["Passion for the organization's mission and a strong commitment to social impact.",
+             "Previous experience in a leadership or board member role.", 
+             "Excellent communication, interpersonal, and problem-solving skills.",
+             "Knowledge of nonprofit governance, operations, and best practices.", 
+             "Ability to work collaboratively with others and build consensus.",
+             "Experience in fundraising, grant writing, or donor relations is a plus."]
+    
+    st.write("We are currently seeking a highly motivated and skilled individual to join our Board of Directors at our student led nonprofit organization. As a Board of Director, you will work closely with other board members to provide oversight and strategic direction for the organization. Your role will be crucial in helping us achieve our mission and goals.")
+    st.write('\n')
+    
+    st.subheader("Responsibilities")
+    for item in responsibilities:
+        st.write("- " + item)
 
+    st.write('\n')
+    st.write('\n')
+    st.subheader("Qualifications")
+    for item in quals:
+        st.write("- " + item)
+
+    st.write('\n')
+    st.write('\n')
+    st.write('We offer a flexible and dynamic work environment that is dedicated to supporting and developing our team members. If you are looking for an opportunity to make a meaningful impact in your community and gain valuable leadership experience, we encourage you to apply for this position. This position is fully remote and unpaid.')
 
 def main():
 
@@ -71,7 +104,7 @@ def main():
     pages = {
         "Home": page_home,
         "Timeline": timeline,
-        #"Contact": page_contact
+        "Board of Directors": board_page
     }
 
     # Display pages as tabs in the sidebar
